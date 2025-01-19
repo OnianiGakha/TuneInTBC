@@ -21,7 +21,7 @@ posts = []
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 
-UPLOAD_FOLDER2 = os.path.join('app', 'static', 'sounds')  
+UPLOAD_FOLDER2 = os.path.join('static', 'sounds')  
 if not os.path.exists(UPLOAD_FOLDER2):  
     os.makedirs(UPLOAD_FOLDER2)
 
@@ -29,14 +29,14 @@ app.config['UPLOAD_FOLDER2'] = UPLOAD_FOLDER2
 
 
 
-UPLOAD_FOLDER = os.path.join('app/static', 'imgs') 
+UPLOAD_FOLDER = os.path.join('static', 'imgs') 
 if not os.path.exists(UPLOAD_FOLDER): 
     os.makedirs(UPLOAD_FOLDER)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-ALBUMS_PATH = os.path.join("app", "static", "albums")
+ALBUMS_PATH = os.path.join("static", "albums")
 if not os.path.exists(ALBUMS_PATH):
     os.makedirs(ALBUMS_PATH)
 
@@ -57,7 +57,7 @@ currentday = datetime.now().timetuple().tm_yday
 
 questionoftheday = questions[currentday%len(questions)]
 
-album = "none"#image_files[currentday % len(image_files)][0:-4]
+album = image_files[currentday % len(image_files)][0:-4]
 
 
 
