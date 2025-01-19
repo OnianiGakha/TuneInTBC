@@ -139,9 +139,8 @@
 
         <h1 id="text1">Album of the day: </h1>
         
-
-        <img src="{{ url_for('static', filename='albums/OK-Computer-By-Radiohead.png') }}" style="width: 300px; height: 300px; display: block; margin: auto; padding: inherit;">
-        <h6 style="font-size: 30px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black; margin: auto; max-width: 500px;">OK Computer By Radiohead</h3>
+        <img src="{{ url_for('static', filename='albums/' + albumoftheday + '.png') }}" style="width: 300px; height: 300px; display: block; margin: auto; padding: inherit;">
+        <h6 style="font-size: 30px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue; -webkit-text-stroke: 1px; -webkit-text-stroke-color: black; margin: auto; max-width: 500px;">{{albumoftheday}}</h3>
         <br>
     </div>
     
