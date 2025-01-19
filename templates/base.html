@@ -11,7 +11,12 @@
     <br>
     <form class="form-inline mx-auto">
         <a class="btn btn-primary" href="\">Home</a>
+
+        { % if username!="guest" % )
         <a class="btn btn-dark" href="{{ url_for('routes.register_view') }}">Register</a>
+        {% endif %}
+        
+        
 
     </form>
 </nav>
